@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images.png">
+</head>
+<body>
+    <div class="titulo-con-imagen">
+        <h1>Gestión de Libros</h1>
+        <img src="reimu.png" alt="Reimu" class="reimu.png"> 
+    </div>
+
+  <form id="form-crear">
+    <h2>Agregar libro</h2>
+    <input type="text" id="titulo" placeholder="Título" required>
+    <input type="text" id="autor" placeholder="Autor" required>
+    <input type="text" id="isbn" placeholder="ISBN" required>
+    <input type="text" id="categoria" placeholder="Categoría" required>
+    <button type="submit">Agregar</button>
+  </form>
+
+  <hr>
+
+  <input type="text" id="busqueda" placeholder="Buscar por título...">
+  <button onclick="buscarLibros()">Buscar</button>
+  <button onclick="cargarLibros()">Ver todos</button>
+
+  <h2>Libros</h2>
+  <ul id="lista-libros"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
